@@ -1,6 +1,83 @@
+$fontFamilyLogo: 'Lobster', cursive;
+$fontFamily: Arial;
+$LG: 1366px;
+$MD: 1024px;
+
 .navbar {
-  height: 50px;
-  width: 1366px;
+  height: 60px;
+  width: $MD;
   background-color: lightblue;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.5), 0 10px 10px 0 rgba(211, 211, 211, 0.5);
+  &__logo {
+    width: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .5s;
+  }
+  &__logo:hover {
+    transform: scale(1.1);
+  }
+  .logo__wcrown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo__wcrown--top {
+    display: flex;
+  }
+  .logo__top {
+    border-top: solid 15px transparent;
+    border-left: solid 10px blue;
+    border-right: solid 10px blue;
+  }
+  .logo__wcrown--bottom {
+    height: 5px;
+    background-color: blue;
+    width: 40px;
+  }
+  .logo__s {
+    font-family: $fontFamilyLogo;
+    color: blue;
+    font-size: 25px;
+  }
+  &__menu {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  &__menuitems {
+    text-decoration: none;
+    color: grey;
+    border-bottom: solid 2px transparent;
+    font-family: $fontFamily;
+    transition: transform .5s;
+    font-size: 20px;
+  }
+  &__menuitems:hover {
+    border-bottom: solid 2px blue;
+    transform: scale(1.2);
+  }
+  .currentpage {
+    color: black;
+    border-bottom: solid 2px blue;
+  }
+}
+.main {
+  width: $MD;
+  margin: auto;
+  border: solid 2px red;
+  &__introduction {
+
+  }
+  &__table {
+    text-align: left;
+  }
 }
