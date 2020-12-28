@@ -1,3 +1,7 @@
+h2 {
+  font-family: Arial;
+}
+
 .navbar {
   height: 60px;
   width: 1024px;
@@ -67,12 +71,61 @@
 }
 
 .main {
+  display: none;
   width: 1024px;
   margin: auto;
   border: solid 2px red;
 }
 .main__table {
+  border: solid 1px black;
   text-align: left;
+}
+
+.about {
+  display: none;
+  width: 1024px;
+  margin: auto;
+  border: solid 2px blue;
+}
+
+.resume {
+  display: none;
+  width: 1024px;
+  margin: auto;
+  border: solid 2px blue;
+}
+
+.projects {
+  display: none;
+  width: 1024px;
+  margin: auto;
+  border: solid 2px blue;
+}
+
+.contact {
+  display: none;
+  width: 1024px;
+  margin: auto;
+  border: solid 2px blue;
+}
+
+.blog {
+  display: none;
+  width: 1024px;
+  margin: auto;
+  border: solid 2px blue;
+}
+
+.default {
+  display: block;
+}
+
+:target {
+  display: block;
+}
+
+:target ~ .default {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
