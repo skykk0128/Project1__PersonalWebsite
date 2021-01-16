@@ -22,7 +22,6 @@ p {
   background-color: lightblue;
 }
 .navbar {
-  height: 60px;
   overflow: hidden;
   margin: auto;
   display: flex;
@@ -124,6 +123,12 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border: solid 4px white;
+  }
+  &__photo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.5), 0 10px 10px 0 rgba(211, 211, 211, 0.5);
+    transition: transform 2s;
   }
   &__details {
     display: flex;
@@ -206,6 +211,7 @@ p {
     width: 10px;
     height: 10px;
     margin-top: 10px;
+    margin-left: -10px;
     border: solid blue;
     border-radius: 100px;
   }
@@ -227,7 +233,7 @@ p {
   &__education--container {
     display: flex;
     justify-content: flex-start;
-    border-left: solid 3px grey;
+    border-left: solid 3px lightgrey;
   }
   &__education--card {
     width: 400px;
@@ -270,7 +276,7 @@ p {
   &__work--container {
     display: flex;
     justify-content: flex-end;
-    border-left: solid 3px grey;
+    border-left: solid 3px lightgrey;
   }
   &__work--card {
     width: 400px;
